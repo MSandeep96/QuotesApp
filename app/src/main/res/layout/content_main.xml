@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sande.quotes.MainActivity"
+    tools:showIn="@layout/activity_main">
+    <TextClock
+        android:textSize="60sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <fragment
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="end"
+        android:id="@+id/fl_cm"
+        class="com.sande.quotes.Fragments.Quotes"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:layout="@layout/fragment_quotes" />
+</LinearLayout>
